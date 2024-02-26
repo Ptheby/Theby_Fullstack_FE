@@ -4,7 +4,6 @@ import { Observable } from 'rxjs';
 import { User } from '../models/user';
 import { Agent } from '../models/agent';
 
-
 @Injectable({
   providedIn: 'root',
 })
@@ -18,7 +17,9 @@ export class UserService {
 
   createUserAndAgent(user: User, agent: Agent): Observable<User> {
     // Create the user and agent at the same time
-    return this.http.post<User>(`${this.apiUrl}/users/create_with_agent`, { user, agent });
+    return this.http.post<User>(`${this.apiUrl}/users/create_with_agent`, {
+      user,
+      agent,
+    });
   }
 }
-

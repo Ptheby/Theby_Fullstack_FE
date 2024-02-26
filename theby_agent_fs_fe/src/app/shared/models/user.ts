@@ -7,7 +7,7 @@ export class User {
   role:string;
   agent?:Agent;
 
-constructor(email:string,password:string,role:string,agent?: Agent) {
+constructor(email:string,password:string,role:string,agent?:Agent) {
 
  this.email = email;
  this.password = password;

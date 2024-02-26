@@ -1,5 +1,6 @@
 import { NumberValueAccessor } from "@angular/forms";
 import { User } from "./user";
+import { GroupByOptionsWithElement } from "rxjs";
 
 export class Agent {
   firstName:string;
@@ -7,14 +8,15 @@ export class Agent {
   email:string;
   npn: number;
   user?:User;
-  group? :Group;
+  // group?: Group; future feature
 
-  constructor (firstName:string,lastName:string,email:string, npn: number,user?:User,group?:Group){
+
+  constructor (firstName:string,lastName:string,email:string, npn: number,user?:User){
 this.firstName= firstName;
 this.lastName= lastName;
 this.email= email;
 this.npn=npn
 this.user=user;
-this.group=group
+
    }
 }
