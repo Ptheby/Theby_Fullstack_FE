@@ -20,10 +20,12 @@ a{color:inherit;text-decoration:none}
 }
 .app-name{
   font-size:32px;
-
+text-align: center;
 	padding-bottom:3rem;
-
+  color:#fff;
 	display:inline-block;
+	border-bottom:2px solid transparent;
+  display:inline-block;
 	border-bottom:2px solid transparent;
 
 }
